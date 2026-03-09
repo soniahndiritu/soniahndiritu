@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About | John Macharia</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS -->
+<link rel="stylesheet" href="css_styling/About.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+<nav class="navbar">
+
+<!-- Hamburger -->
+<button class="menu-toggle" id="menu-toggle">
+<i class="fas fa-bars"></i>
+</button>
+
+<!-- Logo -->
+<div class="logo">Portfolio.</div>
+
+<!-- Navigation -->
+<ul class="nav-links" id="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="About.html">About</a></li>
+<li><a href="Skill.html">Skills</a></li>
+<li><a href="Contact.html">Contact</a></li>
+</ul>
+
+</nav>
+</header>
+
+<!-- ABOUT SECTION -->
+<section class="about-page">
+
+<div class="about-overlay">
+
+<div class="about-content">
+
+<img src="images/image.png" class="profile-img">
+
+<h1>About Me</h1>
+
+<p>
+I am Loise Muthoni Ndiritu, a dedicated Office Administration student with strong passion
+for entrepreneurship, financial analysis and digital marketing.
+</p>
+
+<p>
+Throughout my studies I have developed expertise in marketing strategy,
+customer relationship management, budgeting and financial planning.
+</p>
+
+<p>
+My long-term goal is to become a successful entrepreneur and financial
+consultant who helps businesses grow strategically.
+</p>
+
+<div class="about-details">
+
+<div>
+<h3>Education</h3>
+<p>Certificate in Office Administration</p>
+<p>Kigumo Technical And Vocational College (2024 - Present)</p>
+</div>
+
+<div>
+<h3>Core Strengths</h3>
+<ul>
+<li>Leadership</li>
+<li>Strategic Planning</li>
+<li>Problem Solving</li>
+<li>Communication Skills</li>
+</ul>
+</div>
+
+<div class="social-links">
+<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-github"></i></a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+const toggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+toggle.addEventListener("click", () => {
+
+navLinks.classList.toggle("active");
+
+});
+
+</script>
+
+</body>
+</html>

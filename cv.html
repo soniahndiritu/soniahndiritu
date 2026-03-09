@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Loise Njeri CV</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+<style>
+
+body{
+background:#021827;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin:0;
+padding:0;
+}
+
+/* DOWNLOAD BUTTON */
+
+.download-btn{
+display:block;
+margin:30px auto;
+padding:12px 25px;
+background:#00c853;
+color:white;
+border:none;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.download-btn:hover{
+background:#00a844;
+}
+
+/* CV CONTAINER */
+
+.cv-container{
+width:850px;
+margin:30px auto;
+display:flex;
+background:white;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* LEFT SIDE */
+
+.left{
+width:35%;
+background:linear-gradient(180deg,#021827,#05233b);
+color:white;
+padding:30px;
+}
+
+.profile{
+text-align:center;
+margin-bottom:25px;
+}
+
+.profile img{
+width:130px;
+height:130px;
+border-radius:50%;
+border:5px solid white;
+object-fit:cover;
+}
+
+/* SECTION TITLES */
+
+.section-title{
+background:white;
+color:#021827;
+text-align:center;
+padding:7px;
+border-radius:20px;
+margin:25px 0 15px 0;
+font-weight:bold;
+font-size:13px;
+letter-spacing:1px;
+}
+
+/* CONTACT */
+
+.contact p{
+font-size:14px;
+margin:7px 0;
+}
+
+/* SKILLS */
+
+.skill{
+display:flex;
+align-items:center;
+justify-content:space-between;
+margin:8px 0;
+font-size:14px;
+}
+
+.dots{
+display:flex;
+gap:4px;
+}
+
+.dot{
+width:8px;
+height:8px;
+background:white;
+border-radius:50%;
+opacity:0.3;
+}
+
+.dot.active{
+opacity:1;
+}
+
+/* LANGUAGES */
+
+.language{
+margin:10px 0;
+font-size:14px;
+}
+
+.bar{
+width:100%;
+height:6px;
+background:#3a556d;
+border-radius:10px;
+margin-top:4px;
+}
+
+.level{
+height:6px;
+background:#00c853;
+border-radius:10px;
+}
+
+/* RIGHT SIDE */
+
+.right{
+width:65%;
+}
+
+.header{
+background:#173a5e;
+color:white;
+padding:35px;
+}
+
+.header h1{
+margin:0;
+font-size:34px;
+letter-spacing:1px;
+}
+
+.header h3{
+margin-top:6px;
+font-weight:normal;
+font-size:16px;
+}
+
+.content{
+padding:30px;
+}
+
+.content h3{
+background:#021827;
+color:white;
+display:inline-block;
+padding:6px 15px;
+border-radius:20px;
+font-size:13px;
+letter-spacing:1px;
+margin-top:20px;
+}
+
+.content p{
+font-size:14px;
+line-height:1.7;
+color:#333;
+}
+
+ul{
+font-size:14px;
+padding-left:20px;
+}
+
+li{
+margin:6px 0;
+}
+
+/* PRINT */
+
+@media print{
+
+.download-btn{
+display:none;
+}
+
+body{
+background:white;
+}
+
+.cv-container{
+box-shadow:none;
+margin:0;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<div id="cv">
+
+<div class="cv-container">
+
+<!-- LEFT SIDE -->
+
+<div class="left">
+
+<div class="profile">
+<img src="../images/image.png">
+</div>
+
+<div class="section-title">CONTACT</div>
+
+<div class="contact">
+<p>Nairobi, Kenya</p>
+<p>+254 0795228587</p>
+<p>soniahndiritu@gmail.com</p>
+<p>Portfolio: yourportfolio.com</p>
+</div>
+
+<div class="section-title">SKILLS</div>
+
+<div class="skill">
+<span>Office Administration</span>
+<div class="dots">
+<div class="dot active"></div>
+<div class="dot active"></div>
+<div class="dot active"></div>
+<div class="dot active"></div>
+<div class="dot"></div>
+</div>
+</div>
+
+<div class="skill">
+<span>Microsoft Word</span>
+<div class="dots">
+<div class="dot active"></div>
+<div class="dot active"></div>
+<div class="dot active"></div>
+<div class="dot active"></div>
+<div class="dot active"></div>
+</div>
+</div>
+
+<div class="skill">
+<span>Microsoft Excel</span>
+<div class="dots">
+<div class="dot active"></div>
+<div class="dot active"></div>
+<div class="dot active"></div>
+<div class="dot active"></div>
+<div class="dot"></div>
+</div>
+</div>
+
+<div class="skill">
+<span>PowerPoint</span>
+<div class="dots">
+<div class="dot active"></div>
+<div class="dot active"></div>
+<div class="dot active"></div>
+<div class="dot"></div>
+<div class="dot"></div>
+</div>
+</div>
+
+<div class="skill">
+<span>Customer Service</span>
+<div class="dots">
+<div class="dot active"></div>
+<div class="dot active"></div>
+<div class="dot active"></div>
+<div class="dot active"></div>
+<div class="dot"></div>
+</div>
+</div>
+
+<div class="section-title">LANGUAGES</div>
+
+<div class="language">
+English,Kiswahili
+<div class="bar">
+<div class="level" style="width:95%"></div>
+</div>
+</div>
+
+<div class="language">
+Kiswahili, English
+<div class="bar">
+<div class="level" style="width:90%"></div>
+</div>
+</div>
+
+</div>
+
+<!-- RIGHT SIDE -->
+
+<div class="right">
+
+<div class="header">
+<h1>LOISE MUTHONI</h1>
+<h3>OFFICE ADMINISTRATION</h3>
+</div>
+
+<div class="content">
+
+<h3>PROFESSIONAL SUMMARY</h3>
+
+<p>
+Detail-oriented Office Administration graduate with strong organizational and communication skills. Experienced in managing office records, coordinating schedules and supporting daily administrative operations. Skilled in Microsoft Office applications and committed to maintaining efficient office workflows.
+</p>
+
+<h3>EDUCATION</h3>
+
+<p><b>Certificate in Office Administration</b></p>
+<p>College / Kigumo Technical And Vocational College</p>
+<p>Year of Completion: 2026</p>
+
+<h3>WORK EXPERIENCE</h3>
+
+<p><b>Office Assistant /  – Kiawamururu Coffee Factory, Nyeri</b></p>
+
+<ul>
+<li>Organized office files and records</li>
+<li>Assisted in preparing reports and documents</li>
+<li>Responded to customer inquiries</li>
+<li>Maintained office schedules</li>
+</ul>
+
+<h3>CERTIFICATIONS</h3>
+
+<ul>
+<li>Certificate in Office Administration</li>
+<li>Computer Applications Certificate</li>
+</ul>
+
+<h3>REFEREES</h3>
+
+<p>MR. John Macharia - 0791575532</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function downloadCV(){
+
+const element = document.getElementById("cv");
+
+html2pdf(element,{
+margin:0,
+filename:'Loise Muthoni  Cv.pdf',
+image:{ type:'jpeg', quality:1 },
+html2canvas:{ scale:2 },
+jsPDF:{ unit:'mm', format:'a4', orientation:'portrait' }
+});
+
+}
+
+</script>
+
+</body>
+</html>
