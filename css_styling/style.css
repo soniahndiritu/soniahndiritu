@@ -177,7 +177,7 @@ body {
     z-index: 1;
 }
 
-/* ROTATION ANIMATION // ================= GLOBAL ================= */
+/* ROTATION ANIMATION *//* ================= GLOBAL ================= */
 
 *{
 margin:0;
@@ -242,6 +242,7 @@ display:flex;
 align-items:center;
 justify-content:space-between;
 padding:80px 80px;
+height:auto;
 min-height:90vh;
 }
 
@@ -263,6 +264,61 @@ margin-bottom:20px;
 line-height:1.6;
 margin-bottom:25px;
 color:#ccc;
+}
+
+.buttons{
+display:flex;
+align-items:center;
+gap:14px;
+flex-wrap:wrap;
+}
+
+.cv-btn,
+.download-btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+padding:12px 24px;
+border-radius:999px;
+font-weight:700;
+letter-spacing:0.2px;
+text-decoration:none;
+border:none;
+cursor:pointer;
+transition:transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+animation:buttonPulse 2.8s ease-in-out infinite;
+}
+
+.cv-btn{
+background:linear-gradient(135deg,#00ff88,#00d4ff);
+color:#04131c;
+box-shadow:0 8px 22px rgba(0,255,136,0.32);
+}
+
+.download-btn{
+background:linear-gradient(135deg,#ffc947,#ff8a00);
+color:#1e1300;
+box-shadow:0 8px 22px rgba(255,138,0,0.3);
+}
+
+.cv-btn:hover,
+.download-btn:hover{
+transform:translateY(-3px) scale(1.03);
+filter:brightness(1.06);
+}
+
+.cv-btn:hover{
+box-shadow:0 12px 26px rgba(0,212,255,0.35);
+}
+
+.download-btn:hover{
+box-shadow:0 12px 26px rgba(255,201,71,0.4);
+}
+
+.cv-btn:focus-visible,
+.download-btn:focus-visible{
+outline:2px solid #ffffff;
+outline-offset:2px;
 }
 
 .btn{
@@ -325,6 +381,7 @@ right:20px;
 position:absolute;
 top:70px;
 right:0;
+left:auto;
 width:220px;
 background:#08121c;
 flex-direction:column;
@@ -348,6 +405,7 @@ display:flex;
 flex-direction:column;
 text-align:center;
 padding:60px 30px;
+min-height:auto;
 }
 
 /* image fix */
@@ -365,7 +423,22 @@ height:260px;
 font-size:40px;
 }
 
+.buttons{
+justify-content:center;
 }
+
+}
+
+@keyframes buttonPulse{
+0%,
+100%{
+box-shadow:0 8px 22px rgba(0,0,0,0.25);
+}
+50%{
+box-shadow:0 12px 28px rgba(0,255,136,0.35);
+}
+}
+
 @keyframes rotateRing{
     0%{
         transform: rotate(0deg);
@@ -373,4 +446,32 @@ font-size:40px;
     100%{
         transform: rotate(360deg);
     }
+}
+
+/* FOOTER */
+
+footer{
+background:#08121c;
+text-align:center;
+padding:20px;
+color:#aaa;
+}
+
+footer p{
+max-width:900px;
+margin:0 auto;
+line-height:1.5;
+padding:0 12px;
+}
+
+@media (max-width:480px){
+footer{
+padding:16px 10px;
+}
+
+footer p{
+font-size:13px;
+line-height:1.6;
+word-break:break-word;
+}
 }
